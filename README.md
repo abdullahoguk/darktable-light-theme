@@ -10,7 +10,7 @@
 
    `ln -s /usr/share/darktable/themes/`
    
-3. (Optional) Place fonts in in **`renner font`** folder to ``~/.fonts` directory.
+3. (Optional) Place fonts in in **`poppins-font`** folder to ``~/.fonts` directory.
 
 
 
