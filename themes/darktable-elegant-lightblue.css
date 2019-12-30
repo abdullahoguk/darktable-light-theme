@@ -1,0 +1,437 @@
+/*
+    This file is part of darktable,
+    copyright (c) 2019 Nicolas Auffray
+
+    darktable is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    darktable is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with darktable.  If not, see <http://www.gnu.org/licenses/>.
+*/
+@import url("./themes/darktable-elegant-dark.css");
+
+@define-color blue_black #353b48 ;
+@define-color blue_blacker #2f3640;
+@define-color blue_dark #192a56;
+@define-color blue_darker #192a56;
+@define-color blue_light #718093;
+@define-color blue_lighter #7f8fa6;
+@define-color blue_white #dcdde1;
+@define-color blue_whiter #f5f6fa;
+@define-color blue_middle #00a8ff;
+@define-color blue_middler #0097e6;
+
+
+/*- General */
+@define-color selected_bg_color @blue_middle; /* legacy stuff */
+@define-color border_color @blue_light; /* border, when used */
+@define-color bg_color shade(@blue_whiter, 0.9); /* general background */
+@define-color fg_color @blue_darker; /* general text */
+@define-color base_color @fg_color; /* legacy stuff */
+@define-color text_color @blue_darker; /* same */
+@define-color disabled_fg_color @blue_light; /* disabled controls */
+
+/*- Scroll bars (sliders) */
+@define-color scroll_bar_inactive @blue_dark;
+@define-color scroll_bar_active @blue_darker;
+@define-color scroll_bar_bg @blue_lighter;
+
+/* -Modules box (plugins) */
+@define-color plugin_bg_color shade(@blue_whiter, 0.99);
+@define-color plugin_fg_color @blue_middler;
+@define-color section_label shade(@blue_light,0.9);
+@define-color plugin_label_color shade(@blue_dark,0.8);
+
+/* -Modules controls (sliders and comboboxes) */
+@define-color bauhaus_fg @blue_dark;
+@define-color bauhaus_border shade(@plugin_bg_color, 0.5);
+@define-color bauhaus_indicator_border @plugin_bg_color;
+@define-color bauhaus_fill @blue_middler;
+@define-color bauhaus_bg @blue_light;
+@define-color bauhaus_fg_hover @blue_dark;
+@define-color bauhaus_fg_selected @plugin_bg_color;
+@define-color bauhaus_fg_insensitive alpha(@bauhaus_fg, 0.1);
+
+/*- GTK Buttons and tabs */
+@define-color button_border @grey_100;
+@define-color button_bg shade(@blue_whiter, 0.85);
+@define-color button_fg @blue_dark;
+@define-color button_checked_bg @blue_middler;
+@define-color button_checked_fg @blue_blacker;
+@define-color button_hover_bg @blue_middle;
+@define-color button_hover_fg @blue_black;
+
+/*- text fields */
+@define-color field_bg @blue_white;
+@define-color field_fg @blue_darker;
+@define-color field_active_bg @grey_85;
+@define-color field_active_fg @blue_dark;
+@define-color field_selected_bg @blue_light;
+@define-color field_selected_fg @blue_darker;
+@define-color field_hover_bg @grey_95;
+@define-color field_hover_fg @blue_darker;
+
+/*- Tooltips and contextual helpers */
+@define-color tooltip_bg_color shade(@blue_whiter, 0.80);
+@define-color menu_bg_color shade(@blue_whiter, 0.80);
+
+/*- Views */
+@define-color darkroom_bg_color shade(@blue_whiter, 0.75);
+@define-color darkroom_preview_bg_color @blue_light;
+@define-color lighttable_bg_color @blue_white;
+@define-color lighttable_preview_bg_color @blue_light;
+@define-color print_bg_color @blue_light;
+
+/*- Lighttable and film-strip */
+@define-color thumbnail_font_color @blue_darker;
+@define-color thumbnail_bg_color shade(@blue_whiter, 0.85); /* area between border and outline */
+@define-color thumbnail_outline_color @blue_middle; /* square around image+metadata */
+@define-color thumbnail_selected_font_color @blue_darker;
+@define-color thumbnail_selected_bg_color shade(@blue_middle,0.90);
+@define-color thumbnail_selected_outline_color @blue_light;
+@define-color thumbnail_hover_font_color @blue_darker;
+@define-color thumbnail_hover_bg_color @blue_middle;
+@define-color thumbnail_hover_outline_color @blue_lighter;
+@define-color filmstrip_bg_color @darkroom_bg_color;
+
+/* Graphs : histogram, navigation thumbnail and some items on tone curve */
+@define-color graph_bg shade(@blue_whiter, 0.7);
+@define-color graph_border @blue_light;
+@define-color graph_fg @blue_middle;
+@define-color graph_fg_active @blue_middler;
+@define-color graph_grid @blue_light;
+@define-color inset_histogram alpha(@blue_light, 0.50);
+
+
+
+menu,
+menuitem arrow
+{
+  background-color: @menu_bg_color;
+}
+
+/* Adjust middle grey picker on levels and rgb levels modules to make it visible */
+#picker-grey
+{
+  color: @blue_light;
+background-color:red;
+}
+#picker-white
+{
+  color: @blue_white;
+}
+
+#picker-black
+{
+  color: @blue_darker;
+}
+
+/* deactivated switch buttons, make them less visible */
+#history-switch:disabled
+{
+    color: shade(@plugin_label_color, .7);
+    background-color: transparent;
+}
+
+#history-button *
+{
+  color: shade(@plugin_fg_color, 0.6);
+  background-color: transparent;
+}
+
+button{
+border-radius:3px;
+}
+
+#view_dropdown menuitem:hover,
+#view_dropdown:hover
+{
+  background-color: @button_hover_bg;
+}
+
+#view_dropdown
+{
+  color: @button_hover_bg;
+}
+
+
+/* Fonts */
+
+*,
+#lib-plugin-ui,
+#iop-plugin-ui,
+#lib-modulelist,
+#bauhaus-popup,
+#modules-tabs,
+#left,
+#right,
+combobox,
+combobox *,
+togglebutton,
+togglebutton *,
+notebook,
+notebook *,
+notebook tab,
+notebook tab *,
+table,
+table *,
+row,
+row *,
+frame,
+frame *,
+alignment,
+entry,
+entry *,
+dialog,
+dialog *,
+colorswatch,
+colorswatch *,
+stack,
+stack *,
+scrollbar,
+scrollbar *,
+eventbox,
+eventbox *,
+scale,
+scale *,
+button,
+button *,
+treeview,
+treeview *,
+menu,
+menu *,
+separator,
+eventbox,
+eventbox *,
+box,
+box *
+{
+    font-family: "Poppins medium", "Roboto",                  /* best case scenario */
+                 "Segoe UI Light", "Segoe UI",              /* Windows 10 default */
+                 "SF Pro Display Light", "SF Pro Display",  /* Mac OS X default */
+                 "Ubuntu Light", "Ubuntu",                  /* Ubuntu default */
+                 "Cantarell",                               /* Gnome default */ 
+                 sans-serif;                                /* default default */
+font-size:.991em;
+}
+
+button,
+#section_label
+{
+    font-family: "Poppins medium", 
+                 "Segoe UI Semibold", "Segoe UI",
+                 "SF Pro Display Medium", "SF Pro Display",
+                 "Ubuntu Medium", "Ubuntu",
+                 "Cantarell", 
+                  sans-serif;
+
+}
+
+#iop-panel-label,
+#lib-panel-label
+{
+    font-family: "Poppins medium","Roboto Condensed", "Roboto",
+                 "Segoe UI Condensed", "Segoe UI",
+                 "SF Pro Display", "SF Pro Display",
+                 "Ubuntu Condensed", "Ubuntu",
+                 "Cantarell", 
+                 sans-serif;
+font-size:1em;
+
+}
+
+notebook tabs,
+#modules-tabs,
+#blending-tabs
+{
+    font-family: "Poppins Regular", "Roboto", 
+                 "Segoe UI", 
+                 "SF Pro Text", 
+                 "Ubuntu",
+                 "Cantarell", 
+                  sans-serif;
+font-size:1.1em;
+}
+
+#modules-tabs button,
+#blending-tabs button
+{
+color: @fg_color;
+
+}
+
+notebook tab label /* disabled tabs */
+{
+  color: shade(@button_bg, 0.65);
+  font-weight: bold;
+}
+
+
+
+#bauhaus-popup
+{
+  background-color: @tooltip_bg_color;
+  color: @bauhaus_fg;
+}
+
+#bauhaus-popup:selected
+{
+  color: @bauhaus_fg_selected;
+  background-color: @bauhaus_fg_selected;
+}
+
+#bauhaus-popup:hover
+{
+  color: @blue_middler;
+  background-color: @bauhaus_fg_selected;
+}
+
+#bauhaus-popup:hover,
+#bauhaus-combobox:hover,
+#bauhaus-slider:hover
+{
+  color: @blue_middler;
+  background-color: @bauhaus_fg_selected;
+}
+
+/*
+#bauhaus-combobox,
+#bauhaus-slider
+{
+  min-height: 1em;
+  background-color: transparent;
+  color: @bauhaus_fg;
+}
+*/
+
+
+/* Combobox (dropdown) */
+combobox,
+combobox button
+{
+  border: 0px solid transparent;
+  padding: 0px;
+  background-color: @button_bg;
+  border-radius: 2pt;
+  color: @bauhaus_fg;
+  outline-style: none;
+  min-height: 1em;
+  min-width: 1em;
+}
+
+combobox entry
+{
+  margin: 0 0.5em;
+}
+
+combobox *
+{
+  min-height: 1em;
+  min-width: 1em;
+}
+
+context-menu,
+menu,
+menuitem > menu, /* sub-menu */
+menuitem arrow,
+tooltip,
+popover,
+#background_job_eventbox,
+combobox window,
+dialog combobox window
+{
+  background-color: @tooltip_bg_color;
+  color: @tooltip_fg_color;
+  outline-style:none;
+  border-radius: 2pt;
+  border: 0;
+  outline-style: none;
+  min-height: 0.4em;
+  min-width: 0.4em;
+  padding: 0.4em;
+}
+
+#view_dropdown,
+#view_label
+{
+  background-color: transparent;
+  outline-style:none;
+  border-radius: 2px;
+  padding: 1em 0.5em;
+  color: @section_label;
+}
+
+#view_label {
+  margin: 0.1em 0;
+  background-color: transparent;
+}
+
+menuitem button,
+popover button,
+tooltip button
+{
+  background-color: transparent;
+}
+
+menuitem check
+{
+  border-radius: 2px;
+  border: 1px solid shade(@tooltip_bg_color, 4);
+  min-width: 10px;
+  min-height: 10px;
+  margin-right: 5px;
+}
+
+#header-toolbar combobox,
+#footer-toolbar combobox
+{
+  margin: 0 0.6em;
+}
+
+#module-preset-button,
+#module-reset-button ,
+#module-instance-button ,
+
+#module-collapse-button 
+{
+border:.2em solid transparent;
+ color:@blue_black;
+}
+
+#module-enable-button {
+border:.3em solid transparent;
+}
+
+#module-enable-button:checked   {
+color:@button_checked_fg;
+}
+
+#iop-panel-label,
+#lib-panel-label
+{
+  background-color: transparent;
+  color: @plugin_label_color;
+  border:0;
+  padding: 0 2pt 2pt 0.5em;
+}
+
+treeview,
+filechooserwidget treeview
+{
+  background-color: @blue_whiter;
+  color: @button_fg;
+}
+
+dialog,
+filechooserdialog
+{
+  background-color: @plugin_bg_color;
+  color: @plugin_fg_color;
+}

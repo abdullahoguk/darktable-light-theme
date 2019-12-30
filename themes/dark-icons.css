@@ -1,0 +1,562 @@
+/*
+    This file is part of darktable,
+    copyright (c) 2019 Nicolas Auffray
+
+    darktable is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    darktable is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with darktable.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@import url("./themes/darktable.css");
+
+#iop-panel-icon-sharpen
+{
+    background-image: url('../icons/darkroom-dark/sharpen.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-soften
+{
+    background-image: url('../icons/darkroom-dark/soften.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-ashift
+{
+    background-image: url('../icons/darkroom-dark/ashift.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-atrous
+{
+    background-image: url('../icons/darkroom-dark/atrous.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-basecurve
+{
+    background-image: url('../icons/darkroom-dark/basecurve.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-bilateral
+{
+    background-image: url('../icons/darkroom-dark/bilateral.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-bloom
+{
+    background-image: url('../icons/darkroom-dark/bloom.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-borders
+{
+    background-image: url('../icons/darkroom-dark/borders.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-cacorrect
+{
+    background-image: url('../icons/darkroom-dark/cacorrect.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-channelmixer
+{
+    background-image: url('../icons/darkroom-dark/channelmixer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+
+#iop-panel-icon-clahe
+{
+    background-image: url('../icons/darkroom-dark/clahe.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-clipping
+{
+    background-image: url('../icons/darkroom-dark/clipping.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colisa
+{
+    background-image: url('../icons/darkroom-dark/colisa.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorcorrection
+{
+    background-image: url('../icons/darkroom-dark/colorcorrection.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorin
+{
+    background-image: url('../icons/darkroom-dark/colorin.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colormapping
+{
+    background-image: url('../icons/darkroom-dark/colormapping.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorout
+{
+    background-image: url('../icons/darkroom-dark/colorout.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorreconstruct
+{
+    background-image: url('../icons/darkroom-dark/colorreconstruct.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colortransfer
+{
+    background-image: url('../icons/darkroom-dark/colortransfer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorzones
+{
+    background-image: url('../icons/darkroom-dark/colorzones.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-demosaic
+{
+    background-image: url('../icons/darkroom-dark/demosaic.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-dither
+{
+    background-image: url('../icons/darkroom-dark/dither.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-exposure
+{
+    background-image: url('../icons/darkroom-dark/exposure.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-flip
+{
+    background-image: url('../icons/darkroom-dark/flip.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-graduatednd
+{
+    background-image: url('../icons/darkroom-dark/graduatednd.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-grain
+{
+    background-image: url('../icons/darkroom-dark/grain.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-hazeremoval
+{
+    background-image: url('../icons/darkroom-dark/hazeremoval.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-highlights
+{
+    background-image: url('../icons/darkroom-dark/highlights.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-highpass
+{
+    background-image: url('../icons/darkroom-dark/highpass.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-hotpixels
+{
+    background-image: url('../icons/darkroom-dark/hotpixels.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-invert
+{
+    background-image: url('../icons/darkroom-dark/invert.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-lens
+{
+    background-image: url('../icons/darkroom-dark/lens.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-levels
+{
+    background-image: url('../icons/darkroom-dark/levels.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-liquify
+{
+    background-image: url('../icons/darkroom-dark/liquify.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-lowlight
+{
+    background-image: url('../icons/darkroom-dark/lowlight.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-lowpass
+{
+    background-image: url('../icons/darkroom-dark/lowpass.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-monochrome
+{
+    background-image: url('../icons/darkroom-dark/monochrome.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-nlmeans
+{
+    background-image: url('../icons/darkroom-dark/nlmeans.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-overexposed
+{
+    background-image: url('../icons/darkroom-dark/overexposed.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-gamma
+{
+    background-image: url('../icons/darkroom-dark/profile_gamma.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-rawdenoise
+{
+    background-image: url('../icons/darkroom-dark/rawdenoise.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-rawimport
+{
+    background-image: url('../icons/darkroom-dark/rawimport.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-rawprepare
+{
+    background-image: url('../icons/darkroom-dark/rawprepare.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-relight
+{
+    background-image: url('../icons/darkroom-dark/relight.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-shadhi
+{
+    background-image: url('../icons/darkroom-dark/shadhi.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-sharpen
+{
+    background-image: url('../icons/darkroom-dark/sharpen.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-soften
+{
+    background-image: url('../icons/darkroom-dark/soften.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-splittoning
+{
+    background-image: url('../icons/darkroom-dark/splittoning.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-spots
+{
+    background-image: url('../icons/darkroom-dark/spots.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-temperature
+{
+    background-image: url('../icons/darkroom-dark/temperature.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-template
+{
+    background-image: url('../icons/darkroom-dark/template.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-tonecurve
+{
+    background-image: url('../icons/darkroom-dark/tonecurve.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-tonemap
+{
+    background-image: url('../icons/darkroom-dark/tonemap.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-velvia
+{
+    background-image: url('../icons/darkroom-dark/velvia.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-vignette
+{
+    background-image: url('../icons/darkroom-dark/vignette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-watermark
+{
+    background-image: url('../icons/darkroom-dark/watermark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-zonesystem
+{
+    background-image: url('../icons/darkroom-dark/zonesystem.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
+
+#iop-panel-icon-colorize,
+#iop-panel-icon-retouch,
+#iop-panel-icon-colorbalance,
+#iop-panel-icon-vibrance,
+#iop-panel-icon-filmic,
+#iop-panel-icon-rgbcurve,
+#iop-panel-icon-defringe,
+#iop-panel-icon-denoiseprofile,
+#iop-panel-icon-colorin,
+#iop-panel-icon-basicadj,
+#iop-panel-icon-colorchecker,
+#iop-panel-icon-colorcorrection,
+#iop-panel-icon-rotatepixels,
+#iop-panel-icon-scalepixels,
+#iop-panel-icon-globaltonemap,
+#iop-panel-icon-colorcontrast,
+#iop-panel-icon-bilat,
+#iop-panel-icon-profile_gamma,
+#iop-panel-icon-filmicrgb,
+#iop-panel-icon-rgblevels,
+#iop-panel-icon-lut3d,
+#iop-panel-icon-toneequal,
+#iop-panel-icon-equalizer
+{
+    background-image: url('../icons/darkroom-dark/default.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 3px 0px;
+}
