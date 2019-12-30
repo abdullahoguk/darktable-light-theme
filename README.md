@@ -2,7 +2,7 @@
 
 ## Usage
 
-1. Place **`themes`** and **`icons`** folders into `~/.config/darktable/themes` directory.
+1. Place **`themes`** and **`icons`** folders into `~/.config/darktable` directory.
 
 2. Open Terminal and run these commands to create a link to main themes directory of Darktable.
 
